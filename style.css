@@ -10,6 +10,16 @@
   --secondary-color: #5cb85c;
   --font-family: "Noto Sans JP", sans-serif;
 }
+/* Navbar */
+.navList a{
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  text-decoration: none;
+}
+/* Hero Section */
 .heroSection::before {
   background-image: url("ramen.jpg");
   background-size: cover;
@@ -80,3 +90,5 @@
 
   }
 }
+
+
