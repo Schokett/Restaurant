@@ -10,10 +10,11 @@
   --secondary-color: #5cb85c;
   --font-family: "Noto Sans JP", sans-serif;
 }
-.heroButton::before {
+.heroSection::before {
   background-image: url("ramen.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   filter: brightness(40%) grayscale(20%);
   position: absolute;
   top: 0;
