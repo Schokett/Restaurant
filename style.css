@@ -11,13 +11,18 @@
   --font-family: "Noto Sans JP", sans-serif;
 }
 /* Navbar */
-.navList a{
-  width: 100%;
+.navbar ul{
+  list-style-type: none;
   padding: 2rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  background-color: #000;
+  align-items: center;
+  background-color: #222222;
+}
+.navList a{
   text-decoration: none;
+  color: #fff;
 }
 /* Hero Section */
 .heroSection::before {
