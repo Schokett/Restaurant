@@ -46,6 +46,7 @@
   .subtitle {
     font-family: "Hina Mincho", serif;
     font-size: clamp(1rem, 2vw, 2rem);
+    color: rgb(212, 212, 212);
   }
 
   .heroButton {
