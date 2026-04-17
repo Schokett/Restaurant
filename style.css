@@ -6,7 +6,7 @@
   padding: 0;
 }
 :root {
-  --primary-color: #f0ad4e;
+  --primary-color: #E5381A;
   --secondary-color: #5cb85c;
   --font-family: "Noto Sans JP", sans-serif;
 }
@@ -26,7 +26,12 @@ body {
   background-color: #222222;
   text-transform: uppercase; 
   text-align: center;
-   max-height: 4rem;
+  max-height: 4rem;
+
+   li a:hover {
+    color: var(--primary-color);
+
+   }
 }
 .navList a{
   text-decoration: none;
@@ -72,8 +77,8 @@ body {
     p {
         color: white;
         font-weight: normal;
-        background-color: var(--secondary-color);
-        border: solid 2px var(--secondary-color);
+        background-color: var(--primary-color);
+        border: solid 2px var(--primary-color);
         padding: 1rem 2rem;
         font-size: clamp(1rem, 1vw, 2rem);
         border-radius: 12px;
@@ -83,7 +88,7 @@ body {
   }
   .heroButton p:hover {
     background-color: transparent;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     
     }
 
