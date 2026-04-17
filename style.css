@@ -30,7 +30,7 @@ body {
   letter-spacing: 0.1rem; 
   text-align: center;
   height: 5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   li a{
     transition: all 0.3s ease-out;
