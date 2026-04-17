@@ -27,9 +27,14 @@ body {
   text-transform: uppercase; 
   text-align: center;
   max-height: 4rem;
+  font-size: 1.1rem;
 
+  li a{
+    transition: all 0.3s ease-out;
+  }
    li a:hover {
     color: var(--primary-color);
+    transition: all 0.3s ease;
 
    }
 }
