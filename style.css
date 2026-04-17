@@ -10,39 +10,34 @@
   --secondary-color: #5cb85c;
   --font-family: "Noto Sans JP", sans-serif;
 }
-/* Navbar */
-.navbar {
-  max-height: 4rem;
+body {
+  font-family: var(--font-family);
+  background-color: #f8f8f8;
 }
+/* Navbar */
 .navbar ul{
   list-style-type: none;
   padding: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 4rem;
   align-items: center;
   background-color: #222222;
+  text-transform: uppercase; 
+  text-align: center;
+   max-height: 4rem;
 }
 .navList a{
   text-decoration: none;
   color: #fff;
 }
 /* Hero Section */
-.heroSection::before {
-  background-image: url("ramen.jpg");
+.heroSection {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("ramen.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: brightness(30%) grayscale(20%);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  content: "";
-}
-.heroSection {
   position: relative;
   display: flex;
   width: 100%;
@@ -54,7 +49,7 @@
   justify-content: center;
 
   font-family: "Sedgwick Ave Display", cursive;
-  color: white;
+  color: #fff;
   font-size: clamp(1.5rem, 3vw, 4rem);
   font-weight: bold;
 
@@ -65,7 +60,7 @@
   .subtitle {
     font-family: "Hina Mincho", serif;
     font-size: clamp(1rem, 2vw, 3rem);
-    color: rgb(212, 212, 212);
+    color: #c4c3c3;
   }
 
   a.heroButton {
