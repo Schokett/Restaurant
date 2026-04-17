@@ -26,7 +26,8 @@ body {
   gap: 4rem;
   align-items: center;
   background-color: #1A1A1A;
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  letter-spacing: 0.1rem; 
   text-align: center;
   height: 5rem;
   font-size: 1.1rem;
