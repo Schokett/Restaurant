@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Sans+JP:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+.Platzhalter {
+  height: 300vh;
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +15,11 @@
 }
 body {
   font-family: var(--font-family);
-  background-color: #f8f8f8;
+  background-color: #333333;
 }
 /* Navbar */
 .navbar ul{
   list-style-type: none;
-  padding: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -26,7 +28,7 @@ body {
   background-color: #222222;
   text-transform: uppercase; 
   text-align: center;
-  max-height: 4rem;
+  height: 5rem;
   font-size: 1.1rem;
 
   li a{
@@ -51,7 +53,7 @@ body {
   position: relative;
   display: flex;
   width: 100%;
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 5rem);
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
