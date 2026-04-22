@@ -191,8 +191,11 @@ a.button {
 }
 .contactInfo {
   margin: 2rem 0;
+}
+.actionButtons {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 .contactText {
   padding-bottom: 2rem;
@@ -200,7 +203,6 @@ a.button {
 a.button.contactinvertedAction {
   background-color: transparent !important;
   color: var(--primary-color);
-  margin-top: 1rem;
 }
 .contactSection {
   display: grid;
@@ -260,8 +262,9 @@ a.button.contactinvertedAction {
   .contactSection {
     grid-template-columns: 1fr 1fr;
   }
-  .a.button.contactinvertedAction {
+  .actionButtons {
     flex-direction: row;
+    gap: 1rem;
   }
 }
 @media only screen and (min-width: 1400px) {
