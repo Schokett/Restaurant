@@ -96,7 +96,7 @@ a.button {
   transition: all 0.2s ease-out;
   width: fit-content;
 }
-.button p:hover {
+.button:hover {
   background-color: transparent;
   color: var(--primary-color);
 }
@@ -208,8 +208,12 @@ a.button {
   padding-bottom: 2rem;
 }
 a.button.contactinvertedAction {
-  background-color: transparent !important;
+  background-color: transparent;
   color: var(--primary-color);
+}
+a.button.contactinvertedAction:hover {
+  background-color: var(--primary-color);
+  color: #fff;
 }
 .contactHeader {
   padding-bottom: 0.4rem;
