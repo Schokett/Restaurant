@@ -12,12 +12,13 @@
 :root {
   --primary-color: #e5381a;
   --secondary-color: #5cb85c;
+  --gray-color: #c4c3c3;
   --font-family: "Noto Sans JP", sans-serif;
 }
 body {
   font-family: var(--font-family);
   background-color: #1a1a1a;
-  color: #c4c3c3;
+  color: var(--gray-color);
 }
 /* ---- Navbar ---- */
 .navbar ul {
@@ -73,7 +74,7 @@ body {
   .subtitle {
     font-family: "Hina Mincho", serif;
     font-size: clamp(1rem, 2vw, 3rem);
-    color: #c4c3c3;
+    color: var(--gray-color);
   }
 }
 .heroAction {
@@ -102,20 +103,22 @@ a.button {
 }
 
 /* ---- About Section ----*/
+.underline {
+  text-decoration: underline var(--primary-color) 0.1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
 .aboutSection {
   display: grid;
   gap: 2rem;
   .heading {
     margin: 2rem 0 1rem 0;
-    text-transform: uppercase;
-    letter-spacing: 0.04rem;
-    text-decoration: underline var(--primary-color) 0.1rem;
     font-size: clamp(1.8rem, 2vw, 2.5rem);
-    color: #fff;
   }
   .aboutText {
     font-size: 0.9rem;
-    color: #c4c3c3;
+    color: var(--gray-color);
   }
   .aboutAction {
     margin-top: 2rem;
@@ -145,6 +148,41 @@ a.button {
   max-width: 85%;
   margin: 0 auto;
 }
+/* ---- opening hours ----*/
+.backgroundContainer {
+  background-image:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/assets/open.jpg");
+  background-size: cover;
+  background-position: center 90%;
+  background-repeat: no-repeat;
+  margin-top: 4rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.openHeader {
+  padding-top: 2rem;
+  font-size: 1em;
+}
+.weekdays {
+  color: var(--gray-color);
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+.hours {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.times {
+  color: #fff;
+}
 
 /* ---- Responsive Designs ----*/
 @media only screen and (min-width: 600px) {
@@ -157,6 +195,12 @@ a.button {
       font-size: 1rem;
     }
   }
+  .openHeader {
+    font-size: 1.5em;
+  }
+  .weekdays {
+    width: 15rem;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .navbar ul {
@@ -167,8 +211,18 @@ a.button {
     margin-top: 6rem;
     align-items: center;
   }
-  .aboutImages, .aboutImagesSmall {
+  .aboutImages,
+  .aboutImagesSmall {
     gap: 1rem;
+  }
+  .weekdays {
+    width: 24rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .openHeader {
+    font-size: 2.5em;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .container {
