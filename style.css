@@ -187,10 +187,17 @@ a.button {
   width: 100%;
   height: auto;
   object-fit: cover;
-  margin-top: 1.5rem;
+  align-self: center;
+}
+.contactSection {
+  display: grid;
+  gap: 3rem;
+  padding-top: 4rem;
 }
 .contactInfo {
-  margin: 2rem 0;
+  text-align: left;
+  align-self: center;
+  /* justify-content: space-between; */
 }
 .actionButtons {
   display: flex;
@@ -204,12 +211,8 @@ a.button.contactinvertedAction {
   background-color: transparent !important;
   color: var(--primary-color);
 }
-.contactSection {
-  display: grid;
-  gap: 2rem;
-}
 .contactHeader {
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.4rem;
 }
 
 /* ---- Responsive Designs ----*/
@@ -235,7 +238,7 @@ a.button.contactinvertedAction {
     align-items: center;
   }
   .contactSection {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -260,7 +263,7 @@ a.button.contactinvertedAction {
     font-size: 2.5em;
   }
   .contactSection {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
   .actionButtons {
     flex-direction: row;
