@@ -10,8 +10,17 @@
   --font-family: "Noto Sans JP", sans-serif;
   scroll-behavior: smooth;
 }
-.platzhalter {
-  height: 100vh;
+.disclaimerContainer {
+  /* height: 10vh; */
+  padding: 10rem 0 10rem 0;
+  text-align: center;
+  margin: auto;
+  font-size: 0.9rem;
+}
+.description {
+  text-align: end;
+  margin: auto;
+  font-size: 0.2rem;
 }
 body {
   font-family: var(--font-family);
@@ -19,9 +28,9 @@ body {
   color: var(--gray-color);
 }
 .home {
-  margin-top: 2.5rem;
+  margin: 2rem 2rem 0 0;
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 a.homesite.button {
   display: flex;
@@ -42,7 +51,7 @@ a.button:hover {
   color: var(--primary-color);
 }
 .speisekarteSection {
-  width: 80%;
+  width: 70%;
   text-align: center;
   margin: 0 auto;
   gap: 4rem;
@@ -52,8 +61,7 @@ a.button:hover {
 .speisekarte {
   display: grid;
   grid-template-columns: 1fr;
-  text-align: Left;
-  align-items: center;
+  text-align: left;
   gap: 2rem;
   grid-template-areas:
     "bild"
@@ -68,26 +76,79 @@ a.button:hover {
 }
 .content {
   grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .img {
   width: 100%;
   max-width: 500px;
   height: auto;
-  /* aspect-ratio: 1 / 1; */
-  /* object-fit: cover; */
-  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.img.first {
+  border-radius: 9rem 2rem 2rem 2rem;
+}
+.img.second {
+  border-radius: 2rem 9rem 2rem 2rem;
+}
+.img.third {
+  border-radius: 2rem 2rem 2rem 9rem;
 }
 .recip {
   margin-left: 0 auto;
-  text-decoration: underline var(--primary-color) 0.1rem;
-  font-size: clamp(1.4rem, 2vw, 3rem);
+  text-decoration: underline var(--primary-color) 0.2rem;
+  font-size: clamp(1.1rem, 1.4vw, 2rem);
 }
 .description {
   margin-top: 1rem;
-  font-size: clamp(1rem, 1.4vw, 1.8rem);
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
+  text-align: left;
 }
 .header {
-  font-size: clamp(2rem, 2.5vw, 3rem);
+  font-size: clamp(1rem, 1.3vw, 2rem);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  padding-bottom: 5rem;
+}
+/* ---- Footer ----*/
+.footer {
+  background-color: #121212;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+  min-height: 20vh;
+  border-top: 0.1rem solid var(--primary-color);
+}
+.footerLinks {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  align-self: center;
+  .footerlink {
+    text-decoration: none;
+    color: #c4c3c3;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    position: relative;
+  }
+  .footerlink::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease-in-out;
+  }
+  .footerlink:hover::after {
+    width: 100%;
+  }
 }
 /* ---- Responsive Designs ----*/
 @media only screen and (min-width: 851px) {
@@ -95,8 +156,24 @@ a.button:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "bild text";
   }
-  .speisekarte.two {
+  .speisekarte.second {
     grid-template-areas: "text bild";
+  }
+  .footerLinks {
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    justify-content: center;
+    gap: 3rem;
+
+    a.footerlink {
+      font-size: 1rem;
+    }
+  }
+  .copyright {
+    a.copyrightLink {
+      text-decoration: none;
+      color: var(--gray-color);
+    }
   }
 }
 @media only screen and (max-width: 850px) {
