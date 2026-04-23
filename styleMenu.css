@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #8e050f;
+  --secondary-color: #303030;
+  --gray-color: #c4c3c3;
+  --white-color: #fff;
+  --font-family: "Noto Sans JP", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-family);
+  background-color: #1a1a1a;
+  color: var(--gray-color);
+}
+.home {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+a.homesite.button {
+  display: flex;
+  text-decoration: none;
+  color: var(--white-color);
+  font-weight: normal;
+  background-color: var(--primary-color);
+  border: solid 2px var(--primary-color);
+  padding: 0.5rem 1rem;
+  font-size: clamp(1rem, 1vw, 1.1rem);
+  border-radius: 12px;
+  font-family: var(--font-family);
+  transition: all 0.2s ease-out;
+  width: fit-content;
+}
+a.button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.speisekarteSection {
+  margin: 10rem;
+  text-align: center;
+}
+.speisekarte {
+  margin-top: 2rem;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: auto;
+  text-align: Left;
+  grid-template-columns: 1fr 1fr;
+}
+.img {
+  width: 100%;
+}
