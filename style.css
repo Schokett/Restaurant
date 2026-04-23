@@ -115,6 +115,10 @@ a.button {
     font-size: 0.9rem;
     color: var(--gray-color);
   }
+  .kodawariText {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
   .aboutAction {
     margin-top: 2rem;
     justify-content: left;
