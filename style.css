@@ -10,8 +10,8 @@
   padding: 0;
 }
 :root {
-  --primary-color: #e5381a;
-  --secondary-color: #5cb85c;
+  --primary-color: #8e050f;
+  --secondary-color: #2d4f44;
   --gray-color: #c4c3c3;
   --font-family: "Noto Sans JP", sans-serif;
 }
@@ -184,7 +184,7 @@ a.button {
 }
 /* ---- contact ----*/
 .contactImage {
-  width: 100%;
+  width: 90%;
   height: auto;
   object-fit: cover;
   align-self: center;
