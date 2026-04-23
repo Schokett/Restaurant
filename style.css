@@ -1,6 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Sans+JP:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+/* noto-sans-jp-regular - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/noto-sans-jp-v56-japanese_latin/noto-sans-jp-v56-japanese_latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-jp-700 - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/noto-sans-jp-v56-japanese_latin/noto-sans-jp-v56-japanese_latin-700.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* hina-mincho-regular - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Hina Mincho";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/hina-mincho-v16-japanese_latin/hina-mincho-v16-japanese_latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* sedgwick-ave-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sedgwick Ave Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/sedgwick-ave-display-v23-latin/sedgwick-ave-display-v23-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 * {
   margin: 0;
   padding: 0;

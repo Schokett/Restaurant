@@ -1,3 +1,39 @@
+/* noto-sans-jp-regular - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/noto-sans-jp-v56-japanese_latin/noto-sans-jp-v56-japanese_latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-jp-700 - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/noto-sans-jp-v56-japanese_latin/noto-sans-jp-v56-japanese_latin-700.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* hina-mincho-regular - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Hina Mincho";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/hina-mincho-v16-japanese_latin/hina-mincho-v16-japanese_latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* sedgwick-ave-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sedgwick Ave Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/sedgwick-ave-display-v23-latin/sedgwick-ave-display-v23-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +47,7 @@
   scroll-behavior: smooth;
 }
 .disclaimerContainer {
-  /* height: 10vh; */
-  padding: 10rem 0 5rem 0;
+  padding: 10rem 5rem 5rem 5rem;
   text-align: center;
   margin: auto;
   font-size: 0.9rem;
@@ -105,10 +140,12 @@ a.button:hover {
   margin-left: 0 auto;
   text-decoration: underline var(--primary-color) 0.2rem;
   font-size: clamp(1.1rem, 1.4vw, 2rem);
+  letter-spacing: 0.2rem;
+  font-family: "Sedgwick Ave Display";
 }
 .description {
   margin-top: 1rem;
-  font-size: clamp(1rem, 1.2vw, 1.4rem);
+  font-size: clamp(1rem, 0.9vw, 1.4rem);
   text-align: left;
 }
 .nav {
@@ -193,7 +230,7 @@ a.button:hover {
 @media only screen and (max-width: 850px) {
   .speisekarte {
     grid-template-columns: 1fr;
-    text-align: center;
+    /* text-align: center; */
     gap: 1.5rem;
   }
   .recip {
