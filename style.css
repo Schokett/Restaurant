@@ -224,10 +224,10 @@ a.button.contactinvertedAction:hover {
   display: grid;
   gap: 2rem;
   min-height: 20vh;
-  padding-top: 2rem;
   border-top: 0.1rem solid var(--primary-color);
 }
 .footerLinks {
+  margin-top: 2rem;
   display: grid;
   gap: 1rem;
   align-self: center;
