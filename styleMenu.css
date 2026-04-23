@@ -128,13 +128,13 @@ a.button:hover {
   object-fit: cover;
 }
 .img.first {
-  border-radius: 9rem 2rem 2rem 2rem;
+  border-radius: 9rem 0rem 0rem 0rem;
 }
 .img.second {
-  border-radius: 2rem 9rem 2rem 2rem;
+  border-radius: 0rem 9rem 0rem 0rem;
 }
 .img.third {
-  border-radius: 2rem 2rem 2rem 9rem;
+  border-radius: 0rem 0rem 0rem 9rem;
 }
 .recip {
   margin-left: 0 auto;
