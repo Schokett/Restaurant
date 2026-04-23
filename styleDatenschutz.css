@@ -1,0 +1,77 @@
+/* noto-sans-jp-regular - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/noto-sans-jp-v56-japanese_latin/noto-sans-jp-v56-japanese_latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* noto-sans-jp-700 - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/noto-sans-jp-v56-japanese_latin/noto-sans-jp-v56-japanese_latin-700.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* hina-mincho-regular - japanese_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Hina Mincho";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/hina-mincho-v16-japanese_latin/hina-mincho-v16-japanese_latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* sedgwick-ave-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sedgwick Ave Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/sedgwick-ave-display-v23-latin/sedgwick-ave-display-v23-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #8e050f;
+  --secondary-color: #303030;
+  --gray-color: #c4c3c3;
+  --white-color: #fff;
+  --font-main: "Noto Sans JP", sans-serif;
+  scroll-behavior: smooth;
+}
+.disclaimerContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  color: var(--white-color);
+  font-family: var(--font-main);
+  line-height: 1.6;
+}
+
+.disclaimerContainer h3,
+.disclaimerContainer h4 {
+  color: var(--primary-color);
+  margin-top: 1.5rem;
+}
+
+.disclaimerContainer hr {
+  border: 0;
+  border-top: 1px solid var(--primary-color);
+  margin: 2rem 0;
+  opacity: 0.3;
+}
+
+.disclaimerContainer ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
