@@ -1,19 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Noto+Sans+JP:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
-
-.Platzhalter {
-  height: 300vh;
-}
 * {
   margin: 0;
   padding: 0;
 }
 :root {
   --primary-color: #8e050f;
-  --secondary-color: #2d4f44;
+  --secondary-color: #303030;
   --gray-color: #c4c3c3;
+  --white-color: #fff;
   --font-family: "Noto Sans JP", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   font-family: var(--font-family);
@@ -28,7 +26,7 @@ body {
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #1a1a1a;
+  background-color: #121212;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 0.8rem;
@@ -44,7 +42,7 @@ body {
 }
 .navList a {
   text-decoration: none;
-  color: #fff;
+  color: var(--white-color);
 }
 /* ---- Hero Section ---- */
 .heroSection {
@@ -64,10 +62,9 @@ body {
   text-align: center;
   justify-content: center;
   font-family: "Sedgwick Ave Display", cursive;
-  color: #fff;
+  color: var(--white-color);
   font-size: clamp(1.5rem, 3vw, 4rem);
   font-weight: bold;
-
   .title {
     line-height: clamp(3rem, 6vw, 8rem);
   }
@@ -85,7 +82,7 @@ body {
 a.button {
   display: flex;
   text-decoration: none;
-  color: white;
+  color: var(--white-color);
   font-weight: normal;
   background-color: var(--primary-color);
   border: solid 2px var(--primary-color);
@@ -100,13 +97,12 @@ a.button {
   background-color: transparent;
   color: var(--primary-color);
 }
-
 /* ---- About Section ----*/
 .underline {
   text-decoration: underline var(--primary-color) 0.1rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--white-color);
 }
 .aboutSection {
   display: grid;
@@ -170,7 +166,7 @@ a.button {
   justify-content: space-between;
 }
 .hours {
-  color: #fff;
+  color: var(--white-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,9 +174,8 @@ a.button {
   width: 100%;
   margin-top: 1rem;
 }
-
 .times {
-  color: #fff;
+  color: var(--white-color);
 }
 /* ---- contact ----*/
 .contactImage {
@@ -192,12 +187,11 @@ a.button {
 .contactSection {
   display: grid;
   gap: 3rem;
-  padding-top: 4rem;
+  padding: 4rem 0;
 }
 .contactInfo {
   text-align: left;
   align-self: center;
-  /* justify-content: space-between; */
 }
 .actionButtons {
   display: flex;
@@ -216,11 +210,47 @@ a.button.contactinvertedAction {
 }
 a.button.contactinvertedAction:hover {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--white-color);
 }
 .contactHeader {
   padding-bottom: 0.4rem;
   font-size: clamp(2rem, 2.5vw, 3rem);
+}
+
+/* ---- Footer ----*/
+.footer {
+  background-color: #121212;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+  min-height: 20vh;
+  padding-top: 2rem;
+  border-top: 0.1rem solid var(--primary-color);
+}
+.footerLinks {
+  display: grid;
+  gap: 1rem;
+  align-self: center;
+  .footerlink {
+    text-decoration: none;
+    color: #c4c3c3;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    position: relative;
+  }
+  .footerlink::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease-in-out;
+  }
+  .footerlink:hover::after {
+    width: 100%;
+  }
 }
 
 /* ---- Responsive Designs ----*/
@@ -247,6 +277,22 @@ a.button.contactinvertedAction:hover {
   }
   .contactSection {
     grid-template-columns: 2fr 1fr;
+  }
+  .footerLinks {
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    justify-content: center;
+    gap: 3rem;
+
+    a.footerlink {
+      font-size: 1rem;
+    }
+  }
+  .copyright {
+    a.copyrightLink {
+      text-decoration: none;
+      color: var(--gray-color);
+    }
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -276,6 +322,10 @@ a.button.contactinvertedAction:hover {
   .actionButtons {
     flex-direction: row;
     gap: 1rem;
+  }
+  .footerLinks {
+    font-size: 1.2rem;
+    gap: 5rem;
   }
 }
 @media only screen and (min-width: 1400px) {
