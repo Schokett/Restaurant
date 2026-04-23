@@ -53,3 +53,10 @@ a.button:hover {
 .img {
   width: 100%;
 }
+.recip {
+  margin-left: 0 auto;
+  border-bottom: solid 0.1rem var(--primary-color);
+}
+.description {
+  margin-top: 2rem;
+}
